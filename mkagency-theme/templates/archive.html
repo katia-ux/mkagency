@@ -1,0 +1,59 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","theme":"mkagency"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|9","bottom":"var:preset|spacing|9","left":"var:preset|spacing|6","right":"var:preset|spacing|6"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+
+	<!-- wp:group {"className":"archive-header","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|7"},"margin":{"bottom":"var:preset|spacing|7"}},"border":{"bottom":{"color":"#2e2e2e","width":"1px","style":"solid"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group archive-header">
+		<!-- wp:query-title {"type":"archive","style":{"typography":{"fontFamily":"var:preset|font-family|space-grotesk","fontWeight":"700","letterSpacing":"-0.03em"},"color":{"text":"#ffffff"}}} /-->
+		<!-- wp:term-description {"style":{"color":{"text":"#a0a0a0"},"spacing":{"margin":{"top":"var:preset|spacing|4"}}}} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:query {"queryId":1,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-query">
+
+		<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|6"}},"layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:group {"style":{"color":{"background":"#1a1a1a"},"border":{"radius":"16px","color":"#2e2e2e","width":"1px"},"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|6"}}},"className":"blog-card","layout":{"type":"flex","orientation":"vertical"}} -->
+			<div class="wp-block-group blog-card" style="border:1px solid #2e2e2e;border-radius:16px;background-color:#1a1a1a;padding-bottom:var(--wp--preset--spacing--6)">
+				<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","style":{"border":{"radius":{"topLeft":"16px","topRight":"16px"}}}} /-->
+				<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|5","left":"var:preset|spacing|5","right":"var:preset|spacing|5"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+				<div class="wp-block-group" style="padding:var(--wp--preset--spacing--5)">
+					<!-- wp:post-terms {"term":"category","style":{"color":{"text":"#c8f135"},"typography":{"fontSize":"var:preset|font-size|xs","fontWeight":"700","letterSpacing":"0.08em","textTransform":"uppercase"}}} /-->
+					<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|space-grotesk","fontWeight":"600","fontSize":"var:preset|font-size|xl"},"color":{"text":"#ffffff"}}} /-->
+					<!-- wp:post-excerpt {"numberOfWords":18,"style":{"color":{"text":"#a0a0a0"},"typography":{"fontSize":"var:preset|font-size|sm"}}} /-->
+					<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|3"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
+					<div class="wp-block-group">
+						<!-- wp:post-date {"style":{"color":{"text":"#666666"},"typography":{"fontSize":"var:preset|font-size|xs"}}} /-->
+						<!-- wp:read-more {"content":"Leer →","style":{"color":{"text":"#c8f135"},"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|sm"}}} /-->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:spacer {"height":"var:preset|spacing|7"} -->
+		<div style="height:var(--wp--preset--spacing--7)" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
+			<!-- wp:query-pagination-previous {"label":"← Anterior"} /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next {"label":"Siguiente →"} /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"style":{"color":{"text":"#a0a0a0"}}} -->
+			<p class="has-text-color" style="color:#a0a0a0">No se encontraron entradas.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+
+	</div>
+	<!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","theme":"mkagency"} /-->

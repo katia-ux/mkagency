@@ -1,0 +1,39 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","theme":"mkagency"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|6","right":"var:preset|spacing|6"}},"minHeight":"70vh"},"layout":{"type":"constrained"},"className":"error-404"} -->
+<main class="wp-block-group error-404" style="min-height:70vh">
+
+	<!-- wp:group {"layout":{"type":"constrained","contentSize":"600px"},"style":{"spacing":{"padding":{"top":"0","bottom":"0"}}}} -->
+	<div class="wp-block-group">
+
+		<!-- wp:heading {"level":1,"textAlign":"center","style":{"typography":{"fontFamily":"var:preset|font-family|space-grotesk","fontWeight":"700","fontSize":"10rem","lineHeight":"1"},"color":{"text":"#c8f135"}}} -->
+		<h1 class="wp-block-heading has-text-align-center has-text-color" style="color:#c8f135;font-size:10rem;line-height:1;font-weight:700">404</h1>
+		<!-- /wp:heading -->
+
+		<!-- wp:heading {"level":2,"textAlign":"center","style":{"typography":{"fontFamily":"var:preset|font-family|space-grotesk","fontWeight":"700","fontSize":"var:preset|font-size|4xl","letterSpacing":"-0.02em"},"color":{"text":"#ffffff"}}} -->
+		<h2 class="wp-block-heading has-text-align-center has-text-color" style="color:#ffffff;font-size:var(--wp--preset--font-size--4xl);font-weight:700;letter-spacing:-0.02em">Página no encontrada</h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#a0a0a0"},"spacing":{"margin":{"top":"var:preset|spacing|5"}}}} -->
+		<p class="has-text-align-center has-text-color" style="color:#a0a0a0;margin-top:var(--wp--preset--spacing--5)">Lo sentimos, la página que buscas no existe o ha sido movida. Vuelve al inicio y sigue explorando.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:spacer {"height":"var:preset|spacing|6"} -->
+		<div style="height:var(--wp--preset--spacing--6)" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+		<div class="wp-block-buttons">
+			<!-- wp:button {"backgroundColor":"accent","textColor":"background","style":{"border":{"radius":"100px"},"spacing":{"padding":{"top":"0.85em","bottom":"0.85em","left":"2.5em","right":"2.5em"}}},"className":"is-style-fill"} -->
+			<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button has-accent-background-color has-background-text-color has-background has-text-color" href="/" style="border-radius:100px;padding:0.85em 2.5em">← Volver al inicio</a></div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+
+	</div>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","theme":"mkagency"} /-->
