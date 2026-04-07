@@ -434,16 +434,6 @@
       "postTypes": ["page"]
     },
     {
-      "name": "archive-product",
-      "title": "Tienda WooCommerce",
-      "postTypes": ["page"]
-    },
-    {
-      "name": "single-product",
-      "title": "Producto Individual",
-      "postTypes": ["page"]
-    },
-    {
       "name": "page-cart",
       "title": "Carrito",
       "postTypes": ["page"]
@@ -465,14 +455,5 @@
       "title": "Footer",
       "area": "footer"
     }
-  ],
-  "patterns": [
-    "hero",
-    "services",
-    "portfolio",
-    "testimonials",
-    "stats",
-    "cta",
-    "contact-form"
   ]
 }
