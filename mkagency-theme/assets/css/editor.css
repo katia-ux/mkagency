@@ -1,0 +1,46 @@
+/* =============================================================================
+   MK Agency Theme — editor.css
+   Block editor styles to match front-end appearance
+   ============================================================================= */
+
+body {
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+/* Typography in editor */
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+  color: #ffffff;
+}
+
+.editor-styles-wrapper p,
+.editor-styles-wrapper li {
+  color: #a0a0a0;
+  line-height: 1.75;
+}
+
+.editor-styles-wrapper a {
+  color: #c8f135;
+}
+
+/* Block outline in editor */
+.block-editor-block-list__block[data-type] {
+  outline-color: rgba(200, 241, 53, 0.15) !important;
+}
+
+.block-editor-block-list__block[data-type]:hover > .block-editor-block-list__block-selection-button {
+  background-color: rgba(200, 241, 53, 0.9);
+  color: #0d0d0d;
+}
+
+/* Pattern cards in editor */
+.editor-styles-wrapper .service-card,
+.editor-styles-wrapper .portfolio-card,
+.editor-styles-wrapper .testimonial-card {
+  transition: none !important;
+}
